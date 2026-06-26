@@ -27,7 +27,8 @@ jobs:
         run: go install github.com/v2fly/geoip@latest
 
       - name: Generate kt.dat
-        run: "$(go env GOPATH)/bin/geoip" -c config.json
+        run: |
+          "$(go env GOPATH)/bin/geoip" -c config.json
 
       - name: Verify kt.dat
         run: test -s output/dat/kt.dat
