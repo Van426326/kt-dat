@@ -1,0 +1,50 @@
+name: Build DAT
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-dat:
+    name: Build and publish kt.dat
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Install v2fly geoip generator
+        run: go install github.com/v2fly/geoip@latest
+
+      - name: Generate kt.dat
+        run: "$(go env GOPATH)/bin/geoip" -c config.json
+
+      - name: Verify kt.dat
+        run: test -s output/dat/kt.dat
+
+      - name: Prepare release assets
+        run: |
+          cp output/dat/kt.dat kt.dat
+          sha256sum kt.dat > kt.dat.sha256sum
+
+      - name: Publish latest release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest DAT
+          body: Generated from the latest repository sources.
+          files: |
+            kt.dat
+            kt.dat.sha256sum
+          make_latest: true
+          overwrite_files: true
