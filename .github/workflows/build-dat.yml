@@ -4,7 +4,15 @@ on:
   push:
     branches:
       - main
+    paths:
+      - kt.txt
+      - config.json
+      - .github/workflows/build-dat.yml
   workflow_dispatch:
+
+concurrency:
+  group: build-dat-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
