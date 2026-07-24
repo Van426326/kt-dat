@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "ktTextSha256": "sha256:0b79afdc43c93a77d90155dbfa2b6b92943375043d1bd5dbb9a6ef9b7dcbd1ed",
+  "entries": [
+    {
+      "cidr": "10.1.19.0/24",
+      "bindingRef": "pub_sCcdSFTc0ZXHAGMw62C4CQ",
+      "state": "orphan"
+    },
+    {
+      "cidr": "10.10.1.0/24",
+      "bindingRef": "pub_RRD_XPvHFAkLwq-niNFZjA",
+      "state": "active"
+    },
+    {
+      "cidr": "10.10.20.0/24",
+      "bindingRef": "pub_C8IZSmU9ZIYxSPUmU3WFGA",
+      "state": "active"
+    },
+    {
+      "cidr": "10.102.0.0/24",
+      "bindingRef": "pub_RPGDLZnc8Fyri8iBElE32g",
+      "state": "active"
+    },
+    {
+      "cidr": "10.118.0.0/24",
+      "bindingRef": "pub_kkw46Qx8Jiv6PoLrg2ME-A",
+      "state": "active"
+    },
+    {
+      "cidr": "10.16.18.2/32",
+      "bindingRef": "pub_AJ3tHs4S-nMobM0LPFbMKw",
+      "state": "active"
+    },
+    {
+      "cidr": "10.170.13.0/24",
+      "bindingRef": "pub_lydRyQJtS1Rl66VGxQHGMA",
+      "state": "active"
+    },
+    {
+      "cidr": "10.180.182.182",
+      "bindingRef": "pub_aummk-TrosKmFaq09Hf3Lg",
+      "state": "active"
+    },
+    {
+      "cidr": "10.180.182.182/32",
+      "bindingRef": "pub_hRIfm97iArXzgofsOkXCdQ",
+      "state": "orphan"
+    },
+    {
+      "cidr": "10.200.40.0/24",
+      "bindingRef": "pub_UqrAjw8fUZcoUxZN_hbsRQ",
+      "state": "active"
+    },
+    {
+      "cidr": "10.206.0.0/24",
+      "bindingRef": "pub_DBpHlcEClrkQF1zmmTzlTA",
+      "state": "active"
+    },
+    {
+      "cidr": "10.233.0.0/16",
+      "bindingRef": "pub_C851fhfGwe9kGx4BWZU1hg",
+      "state": "active"
+    },
+    {
+      "cidr": "10.233.80.0/16",
+      "bindingRef": "pub_l6_OrGxhVRheOUdbK_7AKQ",
+      "state": "historical"
+    },
+    {
+      "cidr": "10.28.8.0/24",
+      "bindingRef": "pub_YvChToRUVkIvOanEo9UhPA",
+      "state": "active"
+    },
+    {
+      "cidr": "10.5.210.0/24",
+      "bindingRef": "pub_paOTLujPMdWA332-HdvxGQ",
+      "state": "active"
+    },
+    {
+      "cidr": "10.5.220.0/24",
+      "bindingRef": "pub_AuFK8wzK7q8DapGNLS6dcA",
+      "state": "active"
+    },
+    {
+      "cidr": "10.7.0.0/24",
+      "bindingRef": "pub_Vxk_Sf_jWGgm-P1Wl9n7oQ",
+      "state": "orphan"
+    },
+    {
+      "cidr": "10.9.6.0/24",
+      "bindingRef": "pub_-Nkd_dp3SeFKeihTnb2oDA",
+      "state": "active"
+    },
+    {
+      "cidr": "10.9.9.0/24",
+      "bindingRef": "pub_BQ_yNyjKUVdWv_aU2rSwFQ",
+      "state": "active"
+    },
+    {
+      "cidr": "100.100.121.0/24",
+      "bindingRef": "pub_SpNiuAlBN9f0wDA5xifQNQ",
+      "state": "active"
+    },
+    {
+      "cidr": "11.1.0.0/16",
+      "bindingRef": "pub_KWwcOUrf8CfGs6ejQnroYA",
+      "state": "active"
+    },
+    {
+      "cidr": "116.62.134.9/32",
+      "bindingRef": "pub_OJiQ7IeQXtyPmdJz_64ElA",
+      "state": "orphan"
+    },
+    {
+      "cidr": "130.130.8.0/24",
+      "bindingRef": "pub_vZIinPWi6Np_eTHwVFk0Kw",
+      "state": "active"
+    },
+    {
+      "cidr": "130.150.0.0/16",
+      "bindingRef": "pub_fxz3ohE38GQZ_Bu6Nb-Npg",
+      "state": "active"
+    },
+    {
+      "cidr": "172.16.1.0/24",
+      "bindingRef": "pub_oYGcEqWtBFYaBr0t35aBag",
+      "state": "active"
+    },
+    {
+      "cidr": "172.16.118.51/32",
+      "bindingRef": "pub_w7a8wHIioeDsxwgwbpq8iw",
+      "state": "active"
+    },
+    {
+      "cidr": "172.16.129.0/24",
+      "bindingRef": "pub_wcqE80FFqtNvn5wdfe-13Q",
+      "state": "active"
+    },
+    {
+      "cidr": "172.16.131.0/24",
+      "bindingRef": "pub_t2XzoLtutauyzrZRre_Qng",
+      "state": "active"
+    },
+    {
+      "cidr": "172.16.16.202/32",
+      "bindingRef": "pub_PY-BUrI9E9i55sPIgUlzpg",
+      "state": "active"
+    },
+    {
+      "cidr": "172.16.16.40/32",
+      "bindingRef": "pub_cJxPi_YRnLVmTZR7ddr0Vw",
+      "state": "active"
+    },
+    {
+      "cidr": "172.16.40.0/24",
+      "bindingRef": "pub_ApQFjZlEyREuK7yAju36pQ",
+      "state": "active"
+    },
+    {
+      "cidr": "172.16.40.196/24",
+      "bindingRef": "pub_6Nky5rLFX93_0LaBVUIUcw",
+      "state": "historical"
+    },
+    {
+      "cidr": "172.16.40.196/32",
+      "bindingRef": "pub_PWq-zEe1iuXtWULniUtnCQ",
+      "state": "orphan"
+    },
+    {
+      "cidr": "172.16.63.0/24",
+      "bindingRef": "pub_pG81adDNWpFFaRO_ezH-sg",
+      "state": "active"
+    },
+    {
+      "cidr": "172.168.4.0/24",
+      "bindingRef": "pub_QBg5oHNtNDUVMRGA7mAunw",
+      "state": "active"
+    },
+    {
+      "cidr": "172.168.40.0/24",
+      "bindingRef": "pub_w3Pwl4IuiN54JwYzdanXYw",
+      "state": "active"
+    },
+    {
+      "cidr": "172.168.60.0/24",
+      "bindingRef": "pub_iXuhlTK1DfOXLO01qHhIYQ",
+      "state": "active"
+    },
+    {
+      "cidr": "172.17.20.0/24",
+      "bindingRef": "pub_ESOVPNtpbM8kcUejHixjmw",
+      "state": "active"
+    },
+    {
+      "cidr": "172.17.88.0/24",
+      "bindingRef": "pub_2Xu_qmgIwCz2uLG5b7Z3-Q",
+      "state": "active"
+    },
+    {
+      "cidr": "172.20.1.0/24",
+      "bindingRef": "pub_xuuVOW_I-MiSl_78XlAKcQ",
+      "state": "active"
+    },
+    {
+      "cidr": "172.21.2.0/24",
+      "bindingRef": "pub_JK3bouXpWP3AFFD05P6Y0Q",
+      "state": "active"
+    },
+    {
+      "cidr": "172.28.100.0/24",
+      "bindingRef": "pub_tWWpos9CHEla2DGuFO2cdQ",
+      "state": "active"
+    },
+    {
+      "cidr": "172.28.250.0/24",
+      "bindingRef": "pub_4x2KTkxtuQ4wrnu93aSvmw",
+      "state": "active"
+    },
+    {
+      "cidr": "172.31.10.0/24",
+      "bindingRef": "pub_0uBg4XTIuiUNW0UuJgCAzw",
+      "state": "active"
+    },
+    {
+      "cidr": "172.31.6.0/24",
+      "bindingRef": "pub_9NSHWaSUM_6dea-Yx8gruA",
+      "state": "active"
+    },
+    {
+      "cidr": "180.97.234.247/32",
+      "bindingRef": "pub_29ASO2C9rcSTuUbn0epTzw",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.144.201.0/24",
+      "bindingRef": "pub_yU-2xMhMh9yXK0lVXSENZg",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.0.111",
+      "bindingRef": "pub_p-5H8RgH1siPU_FTjHJHEw",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.0.111/32",
+      "bindingRef": "pub_h93MrXFC17LndFlpYWkrmw",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.168.0.112",
+      "bindingRef": "pub_QdQxuNs5mLO3E1lNzpE5cg",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.0.112/32",
+      "bindingRef": "pub_2YftniA2j_66JpaoGNjuuQ",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.168.0.19/32",
+      "bindingRef": "pub_B3qH5l98-LKDjp4OyCspAQ",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.0.191/32",
+      "bindingRef": "pub_Pb1GHzI568D4kjFOW4qDYA",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.0.20",
+      "bindingRef": "pub_tSPMOnXNYURSdIpJgPSJkw",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.0.20/32",
+      "bindingRef": "pub_C7xsTpblwhqpvGcNorP_Tw",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.168.0.218/32",
+      "bindingRef": "pub_hU_LPYYLAeb0zrnS7nDDig",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.0.31",
+      "bindingRef": "pub_FeMtVjN8cVQB91hS4pG1bg",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.0.31/32",
+      "bindingRef": "pub_nW0Y_iAn41UBUoIlG83AYw",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.168.0.64/32",
+      "bindingRef": "pub_JhaE2EgD13bEjhMCBRgzjA",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.144.0/24",
+      "bindingRef": "pub_HHaOuwq8fg-j7GrwbaC9mQ",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.146.0/23",
+      "bindingRef": "pub_NvKqirZNubQUc66Cv27suw",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.168.146.0/24",
+      "bindingRef": "pub_eeD9a5jrBlB8qJDkdwzfNQ",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.147.0/24",
+      "bindingRef": "pub_Nj8557OLiPVvCYIkCHU3kw",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.148.0/24",
+      "bindingRef": "pub_dPZ5GvJib6om97cY3MS0YA",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.162.0/24",
+      "bindingRef": "pub_MGWwFS9lcaEe5iuQAMgGsw",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.48.0/24",
+      "bindingRef": "pub_qBEWpy7GlAyEtNfg56EZ6A",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.168.52.0/24",
+      "bindingRef": "pub_90fgaAAonH9BQtsbIqKZRw",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.54.0/24",
+      "bindingRef": "pub_u5pfqy_CtEWahPwXYUf7AA",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.7.30",
+      "bindingRef": "pub_hLn54lBsV-NgxOlnGG9gtQ",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.7.30/32",
+      "bindingRef": "pub_SsJdpjrUMijWK4cM73bXjA",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.168.98.0/23",
+      "bindingRef": "pub_4wwFA8mcL1qaq0jnkzA5BA",
+      "state": "orphan"
+    },
+    {
+      "cidr": "192.168.98.0/24",
+      "bindingRef": "pub_yRx5DH5gXsJNSEYR5lZREA",
+      "state": "active"
+    },
+    {
+      "cidr": "192.168.99.0/24",
+      "bindingRef": "pub_sQxVZsbBa_3rUoKhWqCRxQ",
+      "state": "active"
+    },
+    {
+      "cidr": "192.192.165.0/24",
+      "bindingRef": "pub_PwbbOQjHpY3WMkF70fZGyA",
+      "state": "active"
+    },
+    {
+      "cidr": "192.2.2.0/24",
+      "bindingRef": "pub_7HtsSiMxcd2IREEjlVPKww",
+      "state": "active"
+    },
+    {
+      "cidr": "193.169.16.0/24",
+      "bindingRef": "pub_Kd4QdlmSXrJIwq606KSpGA",
+      "state": "active"
+    },
+    {
+      "cidr": "195.165.35.0/24",
+      "bindingRef": "pub_0QeENBycDsUSBVT9c1swcQ",
+      "state": "active"
+    },
+    {
+      "cidr": "196.4.22.0/24",
+      "bindingRef": "pub_gk9npZDIwCq3ZE6hfFZeoQ",
+      "state": "active"
+    },
+    {
+      "cidr": "200.200.200.0/24",
+      "bindingRef": "pub_ZjiD9i2a1UN-6dI4L3OQng",
+      "state": "active"
+    },
+    {
+      "cidr": "92.168.0.0/16",
+      "bindingRef": "pub_EE0p23fsOzc1KE2K2HZskw",
+      "state": "active"
+    }
+  ]
+}
