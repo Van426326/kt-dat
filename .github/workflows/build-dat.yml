@@ -1,4 +1,4 @@
-name: Build DAT
+name: Build rule sets
 
 on:
   push:
@@ -7,19 +7,24 @@ on:
     paths:
       - kt.txt
       - config.json
+      - scripts/build-sing-box-rule-set.py
+      - tests/test_build_sing_box_rule_set.py
       - .github/workflows/build-dat.yml
   workflow_dispatch:
 
 concurrency:
-  group: build-dat-${{ github.ref }}
+  group: build-rule-sets-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
   contents: write
 
+env:
+  SING_BOX_VERSION: 1.14.0
+
 jobs:
-  build-dat:
-    name: Build and publish kt.dat
+  build-rule-sets:
+    name: Build and publish V2Ray and sing-box rule sets
     runs-on: ubuntu-latest
 
     steps:
@@ -31,29 +36,62 @@ jobs:
         with:
           go-version: stable
 
+      - name: Test sing-box source generator
+        run: python3 -m unittest discover -s tests -v
+
       - name: Install v2fly geoip generator
         run: go install github.com/v2fly/geoip@latest
 
-      - name: Generate kt.dat
+      - name: Generate V2Ray GeoIP DAT
         run: |
           "$(go env GOPATH)/bin/geoip" -c config.json
 
-      - name: Verify kt.dat
-        run: test -s output/dat/kt.dat
+      - name: Install sing-box compiler
+        run: |
+          archive="sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz"
+          curl -fsSL --retry 3 \
+            "https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/${archive}" \
+            -o "${RUNNER_TEMP}/${archive}"
+          tar -xzf "${RUNNER_TEMP}/${archive}" -C "${RUNNER_TEMP}"
+          mkdir -p "${RUNNER_TEMP}/bin"
+          install -m 0755 \
+            "${RUNNER_TEMP}/sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box" \
+            "${RUNNER_TEMP}/bin/sing-box"
+          echo "${RUNNER_TEMP}/bin" >> "${GITHUB_PATH}"
+
+      - name: Generate sing-box source and binary rule sets
+        run: |
+          ./scripts/build-sing-box-rule-set.py --input kt.txt --output kt.json
+          sing-box rule-set compile --output kt.srs kt.json
+
+      - name: Verify generated artifacts
+        run: |
+          test -s output/dat/kt.dat
+          test -s kt.json
+          test -s kt.srs
+          python3 -m json.tool kt.json >/dev/null
+          sing-box rule-set decompile --output "${RUNNER_TEMP}/kt-roundtrip.json" kt.srs
+          test -s "${RUNNER_TEMP}/kt-roundtrip.json"
 
       - name: Prepare release assets
         run: |
           cp output/dat/kt.dat kt.dat
           sha256sum kt.dat > kt.dat.sha256sum
+          sha256sum kt.json > kt.json.sha256sum
+          sha256sum kt.srs > kt.srs.sha256sum
 
       - name: Publish latest release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: Latest DAT
-          body: Generated from the latest repository sources.
+          name: Latest rule sets
+          body: Generated from the latest repository sources for V2Ray/daed and sing-box 1.14.
           files: |
             kt.dat
             kt.dat.sha256sum
+            kt.json
+            kt.json.sha256sum
+            kt.srs
+            kt.srs.sha256sum
           make_latest: true
           overwrite_files: true

@@ -1,28 +1,43 @@
 # kt-dat
 
-Custom `kt.dat` GeoIP rule set generated from `kt.txt` with the official `v2fly/geoip` generator.
+Custom IP rule sets generated from `kt.txt` for V2Ray/daed and sing-box 1.14.
 
 ## Download
 
-Latest `kt.dat`:
+### V2Ray/daed
 
 ```text
 https://github.com/Van426326/kt-dat/releases/latest/download/kt.dat
+https://github.com/Van426326/kt-dat/releases/latest/download/kt.dat.sha256sum
 ```
 
-SHA256 checksum:
+### sing-box 1.14
+
+Source rule-set:
 
 ```text
-https://github.com/Van426326/kt-dat/releases/latest/download/kt.dat.sha256sum
+https://github.com/Van426326/kt-dat/releases/latest/download/kt.json
+https://github.com/Van426326/kt-dat/releases/latest/download/kt.json.sha256sum
+```
+
+Binary rule-set:
+
+```text
+https://github.com/Van426326/kt-dat/releases/latest/download/kt.srs
+https://github.com/Van426326/kt-dat/releases/latest/download/kt.srs.sha256sum
 ```
 
 ## Build Flow
 
 This repository uses GitHub Actions to:
 
-1. Install `github.com/v2fly/geoip@latest`.
-2. Generate `kt.dat` from `config.json` and `kt.txt`.
-3. Publish `kt.dat` and `kt.dat.sha256sum` to the `latest` GitHub Release.
+1. Validate the sing-box source generator with unit tests.
+2. Generate `kt.dat` with the official `v2fly/geoip` generator.
+3. Convert `kt.txt` to a sing-box version 5 source rule-set (`kt.json`).
+4. Compile `kt.json` to `kt.srs` with the pinned sing-box 1.14.0 compiler.
+5. Publish all rule sets and SHA256 checksum files to the `latest` GitHub Release.
+
+The V2Ray DAT and sing-box SRS formats are not interchangeable. Use `kt.dat` with daed/V2Ray and `kt.srs` with sing-box.
 
 ## Install daed Auto Updater
 

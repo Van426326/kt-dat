@@ -1,2 +1,10 @@
 output/
 .idea/
+__pycache__/
+*.pyc
+/kt.dat
+/kt.dat.sha256sum
+/kt.json
+/kt.json.sha256sum
+/kt.srs
+/kt.srs.sha256sum
