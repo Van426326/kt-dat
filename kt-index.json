@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "ktTextSha256": "sha256:87a6f9688ec83145e5824c2ed2d37c060484e280ea35ca104f345f2fe4b2139c",
+  "ktTextSha256": "sha256:acb8c0d363e1e57b72366b360246e8f93ae473994ee214884c09cb04e3bbe14f",
   "entries": [
     {
       "cidr": "10.1.19.0/24",
@@ -80,6 +80,16 @@
     {
       "cidr": "10.28.8.0/24",
       "bindingRef": "pub_YvChToRUVkIvOanEo9UhPA",
+      "state": "active"
+    },
+    {
+      "cidr": "10.46.13.0/24",
+      "bindingRef": "pub_8u4lqWl8EaZoBFxZNSxXkg",
+      "state": "active"
+    },
+    {
+      "cidr": "10.46.14.0/24",
+      "bindingRef": "pub_J2DL9WFESTb4r9dFe90jxg",
       "state": "active"
     },
     {
