@@ -280,7 +280,7 @@
     {
       "cidr": "172.17.10.0/24",
       "bindingRef": "pub_XQAGk_VPW64wlvgFmBm7VQ",
-      "state": "active"
+      "state": "historical"
     },
     {
       "cidr": "172.17.20.0/24",
